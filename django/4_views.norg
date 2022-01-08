@@ -1,0 +1,20 @@
+@document.meta
+    title: 4_views
+    description:
+    authors: sui
+    categories:
+    created: 2022-01-04
+    version: 0.0.9
+@end
+
+* Variables
+-> file-project = nombre de la carpeta raiz del proyecto
+-> name-project = nombre del proyecto django a crear
+-> name-app = nombre de la app a crear
+
+* Rutas
+ | r = requirements.txt
+ | p = </{file-proyect}/>
+ | c = </{name-proyect}/>
+
+* Views

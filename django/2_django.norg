@@ -1,0 +1,44 @@
+@document.meta
+    title: 2_django
+    description:
+    authors: sui
+    categories:
+    created: 2022-01-03
+    version: 0.0.9
+@end
+
+* Variables
+-> file-project = nombre de la carpeta raiz del proyecto
+-> name-project = nombre del proyecto django a crear
+-> name-app = nombre de la app a crear
+
+* Rutas
+ | r = requirements.txt
+ | p = </{file-proyect}/>
+ | c = </{name-proyect}/>
+
+* Requerimientos de proyecto
+  *** Lo mas adecuado despues de haber creado el entorno virtual es crear un achivo de texto.
+  *** El archivo de texto tendra todos los requerimientos a nesecitar el proyecto.
+  *** Para realizar todos los pasos debes de tener activado en entorno virtual.
+  *** Tambien podemos asignar la version del paquete a instalar poniendo (/==/) despues del paquete.
+
+    - Creacion del archivo requirements.txt (/{p}/)
+    ***** touch requirements.txt
+    - Escribir los paquetes a usar en el proyecto
+        [django
+         djangorestframework{==}3.13.1 \
+         piloy]
+    - Instalar los paquetes escritos (/{r}/)
+    ***** pip3 install -r requirements.txt
+
+* Django
+  *** Como vimos anteriormente el hacer esto nos ayudara a saber que paquetes utilizaremos
+  *** Por los tanto esto tambien aplica a lo que seria django
+
+    - Instalando Django
+    ***** pip3 install -r requirements.txt
+    - Iniciando el proyecto de django (/{p}/)
+    ***** django-admin startproject </{name-project}/>
+    - Creando una aplicacion para el proyecto (/{p}/)
+    ***** python3 manage.py startapp </{name-app}/>

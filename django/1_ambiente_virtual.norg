@@ -1,0 +1,30 @@
+@document.meta
+    title: 1_ambiente_virtual
+    description:
+    authors: sui
+    categories:
+    created: 2022-01-03
+    version: 0.0.9
+@end
+
+* Variables
+-> name-env = nombre del entorno virtual a crear
+-> file-project = nombre de la carpeta raiz del proyecto
+
+* Rutas
+ | p = </{file-proyect}/>
+
+* Ambiente virtual
+*** Para crear el entorno lo mas adecuado es hacerlo en una carpeta en donde estara el proyecto.
+*** Para Eliminar el entorno virtual solo debes de eliminar la carpeta en la cual la creaste.
+*** Comunmente el nombre que se le asigna al entorno virtual es (/env/).
+
+ ** Virtual Env
+    - Instalando el entorno virtual
+    ***** pip3 install virtualenv
+    - Creando el entorno virtual (/{p}/)
+    ***** virtualenv </{name-env}/>
+    - Activando el entorno virtual
+    ***** source </{name-env}/>/bin/activate
+    - Desactivando el entorno virtual
+    ***** deactivate
